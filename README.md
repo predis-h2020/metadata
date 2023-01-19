@@ -5,7 +5,21 @@ Metadata examples and their schemas for data procured by waste package monitorin
 Metadata and schemas that are used to validate and track waste package sensor measurements, digital twin model output. 
 
 ## Installation
+* First clone the repository. 
+* Then install a conda environment using the provided environment file
+```
+conda env create --prefix ./conda-env -f environment.yml 
+```
+You could also use mamba (which is usually much faster).
 
+* Activate the environment
+```
+conda activate ./conda-env
+```
+* Execute either the tests using 
+```
+python -m pytest .
+```
 
 ## Contributing with development
 
