@@ -1,0 +1,208 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Waste Package Monitoring LoRa Node Metadata",
+    "description": "Metadata for a waste package monitoring LoRa Node, equipped with 1 to 8 radiation sensors and 1 battery monitor.",
+    "type": "object",
+    "required": [
+        "Node_ID",
+        "Node_Type",
+        "Validity_Date",
+	    "Measure_Channel_1",
+		"Measure_Channel_2",
+		"Measure_Channel_3",
+		"Measure_Channel_4",
+		"Measure_Channel_5",
+		"Measure_Channel_6",
+		"Measure_Channel_7",
+		"Measure_Channel_8",
+		"Measure_Channel_9",
+	    "Format_Channel_1",
+		"Format_Channel_2",
+		"Format_Channel_3",
+		"Format_Channel_4",
+		"Format_Channel_5",
+		"Format_Channel_6",
+		"Format_Channel_7",
+		"Format_Channel_8",
+		"Format_Channel_9",
+	    "Unit_Channel_1",
+		"Unit_Channel_2",
+		"Unit_Channel_3",
+		"Unit_Channel_4",
+		"Unit_Channel_5",
+		"Unit_Channel_6",
+		"Unit_Channel_7",
+		"Unit_Channel_8",
+		"Unit_Channel_9"
+    ],
+    "properties": {
+        "Node_ID": {
+            "description": "A unique identifier for the LoRa Node. Ex: 0x2_UniPi",
+            "type": "string"
+        },
+        "Node_Type": {
+            "description": "Description of the function of the LoRa Node ans its measuring capabilities. Ex: Radiation_Monitor",
+            "type": "string"
+        },
+        "Node_Serial_No": {
+            "description": "Serial No of the LoRa Node. By default consists in Node_ID + Node_Type, Ex: 0x2_UniPi_Radiation_Monitor ",
+            "type": "string"
+        },
+        "Manufacturer": {
+            "description": "Manufacturer of the LoRa Node. Ex: UniPi",
+            "type": "string"
+        },
+        "Manufacturer_Date": {
+            "description": "Manufacturing date of the LoRa Node. Expressed as dd-mm-yyyy. Ex: 15-10-2021",
+            "type": "string"
+        },
+		"Validity_Date": {
+			"description": "Validity Date given by the Manufacturer. Expressed as dd-mm-yyy. Ex: 15-10-2031",
+			"type": "string"
+		},
+		"Measure_Channel_1": {
+			"description": "description of what channel_1 is measuring. Ex: channel_1_cts",
+			"type": "string"
+		},	
+		"Measure_Channel_2": {
+			"description": "description of what channel_2 is measuring. Ex: channel_2_cts",
+			"type": "string"
+		},
+		"Measure_Channel_3": {
+			"description": "description of what channel_3 is measuring. Ex: channel_3_cts",
+			"type": "string"
+		},
+		"Measure_Channel_4": {
+			"description": "description of what channel_4 is measuring. Ex: channel_4_cts",
+			"type": "string"
+		},
+		"Measure_Channel_5": {
+			"description": "description of what channel_5 is measuring. Ex: channel_5_cts",
+			"type": "string"
+		},
+		"Measure_Channel_6": {
+			"description": "description of what channel_6 is measuring. Ex: channel_6_cts",
+			"type": "string"
+		},
+		"Measure_Channel_7": {
+			"description": "description of what channel_7 is measuring. Ex: channel_7_cts",
+			"type": "string"
+		},
+		"Measure_Channel_8": {
+			"description": "description of what channel_8 is measuring. Ex: channel_8_cts",
+			"type": "string"
+		},
+		"Measure_Channel_9": {
+			"description": "description of what channel_9 is measuring. Ex: b_level",
+			"type": "string"
+		},		
+		"Calibration_Channel_1": {
+			"description": "Calibration factor of channel_1. Ex: 4.8 cpm/uSv/h",
+			"type": "string"
+		},	
+		"Calibration_Channel_2": {
+			"description": "Calibration factor of channel_2. Ex: 4.8 cpm/uSv/h",
+			"type": "string"
+		},
+		"Calibration_Channel_3": {
+			"description": "Calibration factor of channel_3. Ex: 4.8 cpm/uSv/h",
+			"type": "string"
+		},	
+		"Calibration_Channel_4": {
+			"description": "Calibration factor of channel_4. Ex: 4.8 cpm/uSv/h",
+			"type": "string"
+		},	
+		"Calibration_Channel_5": {
+			"description": "Calibration factor of channel_5. Ex: 4.8 cpm/uSv/h",
+			"type": "string"
+		},
+		"Calibration_Channel_6": {
+			"description": "Calibration factor of channel_6. Ex: 4.8 cpm/uSv/h",
+			"type": "string"
+		},	
+		"Calibration_Channel_7": {
+			"description": "Calibration factor of channel_7. Ex: 4.8 cpm/uSv/h",
+			"type": "string"
+		},	
+		"Calibration_Channel_8": {
+			"description": "Calibration factor of channel_8. Ex: 4.8 cpm/uSv/h",
+			"type": "string"
+		},	
+		"Calibration_Channel_9": {
+			"description": "Calibration factor of channel_9. Ex: N/A",
+			"type": "string"
+		},	
+		"Format_Channel_1": {
+			"description": "Format of data given by channel_1. Ex: int32_t",
+			"type": "string"
+		},	
+		"Format_Channel_2": {
+			"description": "Format of data given by channel_2. Ex: int32_t",
+			"type": "string"
+		},	
+		"Format_Channel_3": {
+			"description": "Format of data given by channel_3. Ex: int32_t",
+			"type": "string"
+		},	
+		"Format_Channel_4": {
+			"description": "Format of data given by channel_4. Ex: int32_t",
+			"type": "string"
+		},	
+		"Format_Channel_5": {
+			"description": "Format of data given by channel_5. Ex: int32_t",
+			"type": "string"
+		},	
+		"Format_Channel_6": {
+			"description": "Format of data given by channel_6. Ex: int32_t",
+			"type": "string"
+		},	
+		"Format_Channel_7": {
+			"description": "Format of data given by channel_7. Ex: int32_t",
+			"type": "string"
+		},	
+		"Format_Channel_8": {
+			"description": "Format of data given by channel_8. Ex: int32_t",
+			"type": "string"
+		},	
+		"Format_Channel_9": {
+			"description": "Format of data given by channel_9. Ex: int32_t",
+			"type": "string"
+		},	
+		"Unit_Channel_1": {
+			"description": "Unit of data given by channel_1. Ex: cts",
+			"type": "string"
+		},
+		"Unit_Channel_2": {
+			"description": "Unit of data given by channel_2. Ex: cts",
+			"type": "string"
+		},	
+		"Unit_Channel_3": {
+			"description": "Unit of data given by channel_3. Ex: cts",
+			"type": "string"
+		},	
+		"Unit_Channel_4": {
+			"description": "Unit of data given by channel_4. Ex: cts",
+			"type": "string"
+		},	
+		"Unit_Channel_5": {
+			"description": "Unit of data given by channel_5. Ex: cts",
+			"type": "string"
+		},	
+		"Unit_Channel_6": {
+			"description": "Unit of data given by channel_6. Ex: cts",
+			"type": "string"
+		},	
+		"Unit_Channel_7": {
+			"description": "Unit of data given by channel_7. Ex: cts",
+			"type": "string"
+		},	
+		"Unit_Channel_8": {
+			"description": "Unit of data given by channel_8. Ex: cts",
+			"type": "string"
+		},	
+		"Unit_Channel_9": {
+			"description": "Unit of data given by channel_9. Ex: %",
+			"type": "string"
+		}							 
+    }
+}
