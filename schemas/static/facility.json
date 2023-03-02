@@ -1,0 +1,95 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Waste Packages Facility Metadata",
+    "description": "Metadata to describe waste-packages stored in a facility.",
+    "type": "object",
+    "required": [
+        "facility",
+        "packages"
+    ],
+    "properties": {
+        "facility": {
+            "description": "Generic information about the facility.",
+            "type": "object",
+            "required": [
+                "ID",
+                "name",
+                "location"
+            ],
+            "properties": {
+                "ID": {
+                    "description": "Facility's identifier code.",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Facility's name.",
+                    "type": "string"
+                },
+                "location": {
+                    "description": "Facility's complete address.",
+                    "type": "string"
+                }
+            }
+        },
+        "packages": {
+            "description": "Information about the stored packages. The facility should update these information if any changes in the packages configuration have been done.",
+            "type": "array",
+            "items": {
+                "description": "Information of a single waste-drum.",
+                "type": "object",
+                "required": [
+                    "ID",
+                    "content",
+                    "drawing",
+                    "location",
+                    "sensing_systems"
+                ],
+                "properties": {
+                    "ID": {
+                        "description": "Drum's unique identifier.",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "content": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "treatment": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "production_date": {
+                        "description": "Date in dd:mm:yyyy format.",
+                        "type": "string"
+                    },
+                    "arrival_date": {
+                        "description": "Date in dd:mm:yyyy format.",
+                        "type": "string"
+                    },
+                    "picture": {
+                        "description": "<link/to/picture>",
+                        "type": "string"
+                    },
+                    "drawing": {
+                        "description": "<link/to/picture> with reference frame specification.",
+                        "type": "string"
+                    },
+                    "location": {
+                        "description": "Position in the facility.",
+                        "type": "string"
+                    },
+                    "sensing_systems": {
+                        "description": "Sensor systems the drum has been installed or is compatible with.",
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

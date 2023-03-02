@@ -1,0 +1,39 @@
+{
+    "facility": {
+        "ID": "",
+        "name": "",
+        "location": ""
+    },
+    "packages": [
+        {
+            "ID": "0x01",
+            "type": "",
+            "content": "",
+            "treatment": "",
+            "production_date": "",
+            "arrival_date": "",
+            "picture": "",
+            "drawing": "",
+            "location": "",
+            "sensing_systems": [
+                "Embedded SensorNet",
+                "Muon Detector"
+            ]
+        },
+        {
+            "ID": "0x02",
+            "type": "",
+            "content": "",
+            "treatment": "",
+            "production_date": "",
+            "arrival_date": "",
+            "picture": "",
+            "drawing": "",
+            "location": "",
+            "sensing_systems": [
+                "Embedded SensorNet",
+                "Muon Detector"
+            ]
+        }
+    ]
+}
