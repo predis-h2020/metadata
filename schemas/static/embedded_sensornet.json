@@ -27,8 +27,7 @@
                         "type": "object",
                         "required": [
                             "node_id",
-                            "devices",
-                            "location"
+                            "sensors"
                         ],
                         "properties": {
                             "node_id": {
@@ -43,68 +42,8 @@
                                 "description": "Institution/company responsible for the product.",
                                 "type": "string"
                             },
-                            "devices": {
-                                "description": "Sensors installed in each SensorNode.",
-                                "type": "array",
-                                "items": {
-                                    "type": "object",
-                                    "properties": {
-                                        "measurement": {
-                                            "description": "Quantity measured by the sensor.",
-                                            "type": "string",
-                                            "enum": [
-                                                "Relative Humidity",
-                                                "Temperature",
-                                                "Pressure"
-                                            ]
-                                        },
-                                        "product_name": {
-                                            "description": "Sensor's product code.",
-                                            "type": "string"
-                                        },
-                                        "measure_unit": {
-                                            "description": "SI measure unit.",
-                                            "type": "string"
-                                        },
-                                        "min": {
-                                            "description": "Minimum value admissible by the sensor (in SI unit measure).",
-                                            "type": "number"
-                                        },
-                                        "max": {
-                                            "description": "Maximum value admissible by the sensor (in SI unit measure).",
-                                            "type": "number"
-                                        },
-                                        "accuracy": {
-                                            "description": "Sensor's accuracy (in SI unit measure)",
-                                            "type": "number"
-                                        }
-                                    }
-                                }
-                            },
-                            "calibration": {
-                                "description": "Information about the sensor's calibration.",
-                                "type": "object",
-                                "properties": {
-                                    "date": {
-                                        "description": "Start date of the calibration procedure.",
-                                        "type": "string"
-                                    },
-                                    "certificate": {
-                                        "description": "Released certificate/code from the institute/company responsible for the calibration.",
-                                        "type": "string"
-                                    },
-                                    "notes": {
-                                        "description": "Additional notes.",
-                                        "type": "string"
-                                    }
-                                }
-                            },
-                            "location": {
-                                "description": "Position of the SensorNode inside the drum. Cylindrical coordinate system in the format [radial distance, azimuth, height] and SI measure units.",
-                                "type": "array",
-                                "items": {
-                                    "type": "number"
-                                }
+                            "sensors": {
+                                "$ref": "sensor.json"
                             }
                         }
                     }
