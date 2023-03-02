@@ -8,8 +8,10 @@
             0
         ]
     },
-    "measuring_quantity": {
-        "measurement": "Temperature",
-        "unit": "K"
-    }
+    "measuring_quantity": [
+        {
+            "measurement": "Temperature",
+            "unit": "K"
+        }
+    ]
 }

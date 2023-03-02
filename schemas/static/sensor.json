@@ -53,7 +53,7 @@
                 "type": "object",
                 "required": [
                     "measurement",
-                    "measure_unit"
+                    "unit"
                 ],
                 "properties": {
                     "measurement": {
@@ -66,7 +66,7 @@
                             "Pressure"
                         ]
                     },
-                    "measure_unit": {
+                    "unit": {
                         "description": "SI measure unit.",
                         "type": "string"
                     },

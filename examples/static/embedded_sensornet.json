@@ -13,14 +13,14 @@
                         "measuring_quantity": [
                             {
                                 "measurement": "Relative Humidity",
-                                "measure_unit": "%RH",
+                                "unit": "%RH",
                                 "min": 0,
                                 "max": 100,
                                 "accuracy": 2
                             },
                             {
                                 "measurement": "Temperature",
-                                "measure_unit": "°C",
+                                "unit": "°C",
                                 "min": -40,
                                 "max": 125,
                                 "accuracy": 0.5
@@ -51,14 +51,14 @@
                         "measuring_quantity": [
                             {
                                 "measurement": "Pressure",
-                                "measure_unit": "kPa",
+                                "unit": "kPa",
                                 "min": 0,
                                 "max": 400,
                                 "accuracy": 1
                             },
                             {
                                 "measurement": "Temperature",
-                                "measure_unit": "°C",
+                                "unit": "°C",
                                 "min": -50,
                                 "max": 150,
                                 "accuracy": 5
@@ -96,14 +96,14 @@
                         "measuring_quantity": [
                             {
                                 "measurement": "Relative Humidity",
-                                "measure_unit": "%RH",
+                                "unit": "%RH",
                                 "min": 0,
                                 "max": 100,
                                 "accuracy": 2
                             },
                             {
                                 "measurement": "Temperature",
-                                "measure_unit": "°C",
+                                "unit": "°C",
                                 "min": -40,
                                 "max": 125,
                                 "accuracy": 0.5
@@ -134,14 +134,14 @@
                         "measuring_quantity": [
                             {
                                 "measurement": "Pressure",
-                                "measure_unit": "kPa",
+                                "unit": "kPa",
                                 "min": 0,
                                 "max": 400,
                                 "accuracy": 1
                             },
                             {
                                 "measurement": "Temperature",
-                                "measure_unit": "°C",
+                                "unit": "°C",
                                 "min": -50,
                                 "max": 150,
                                 "accuracy": 5
@@ -179,14 +179,14 @@
                         "measuring_quantity": [
                             {
                                 "measurement": "Relative Humidity",
-                                "measure_unit": "%RH",
+                                "unit": "%RH",
                                 "min": 0,
                                 "max": 100,
                                 "accuracy": 2
                             },
                             {
                                 "measurement": "Temperature",
-                                "measure_unit": "°C",
+                                "unit": "°C",
                                 "min": -40,
                                 "max": 125,
                                 "accuracy": 0.5
@@ -217,14 +217,14 @@
                         "measuring_quantity": [
                             {
                                 "measurement": "Pressure",
-                                "measure_unit": "kPa",
+                                "unit": "kPa",
                                 "min": 0,
                                 "max": 400,
                                 "accuracy": 1
                             },
                             {
                                 "measurement": "Temperature",
-                                "measure_unit": "°C",
+                                "unit": "°C",
                                 "min": -50,
                                 "max": 150,
                                 "accuracy": 5
@@ -262,14 +262,14 @@
                         "measuring_quantity": [
                             {
                                 "measurement": "Relative Humidity",
-                                "measure_unit": "%RH",
+                                "unit": "%RH",
                                 "min": 0,
                                 "max": 100,
                                 "accuracy": 2
                             },
                             {
                                 "measurement": "Temperature",
-                                "measure_unit": "°C",
+                                "unit": "°C",
                                 "min": -40,
                                 "max": 125,
                                 "accuracy": 0.5
@@ -300,14 +300,14 @@
                         "measuring_quantity": [
                             {
                                 "measurement": "Pressure",
-                                "measure_unit": "kPa",
+                                "unit": "kPa",
                                 "min": 0,
                                 "max": 400,
                                 "accuracy": 1
                             },
                             {
                                 "measurement": "Temperature",
-                                "measure_unit": "°C",
+                                "unit": "°C",
                                 "min": -50,
                                 "max": 150,
                                 "accuracy": 5
@@ -345,14 +345,14 @@
                         "measuring_quantity": [
                             {
                                 "measurement": "Relative Humidity",
-                                "measure_unit": "%RH",
+                                "unit": "%RH",
                                 "min": 0,
                                 "max": 100,
                                 "accuracy": 2
                             },
                             {
                                 "measurement": "Temperature",
-                                "measure_unit": "°C",
+                                "unit": "°C",
                                 "min": -40,
                                 "max": 125,
                                 "accuracy": 0.5
@@ -383,14 +383,14 @@
                         "measuring_quantity": [
                             {
                                 "measurement": "Pressure",
-                                "measure_unit": "kPa",
+                                "unit": "kPa",
                                 "min": 0,
                                 "max": 400,
                                 "accuracy": 1
                             },
                             {
                                 "measurement": "Temperature",
-                                "measure_unit": "°C",
+                                "unit": "°C",
                                 "min": -50,
                                 "max": 150,
                                 "accuracy": 5
