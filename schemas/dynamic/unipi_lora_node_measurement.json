@@ -1,0 +1,126 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "lora_node radiation monitor measurement dynamic metadata",
+  "description": "metadata schema which describes the measurement sent to Azure Blob Storage from Azure IoT Central. Each measurement is from a single lora_node",
+  "type": "object",
+  "required": [
+    "telemetry"
+  ],
+  "properties": {
+    "applicationId": {
+      "description": "The ID of the IoT Central application.",
+      "type": "string"
+    },
+    "deviceId": {
+      "description": "The ID of the device that sent the telemetry message. The ID of the gateway",
+      "type": "string"
+    },
+    "templateId": {
+      "description": "The ID of the device template assigned to the device.",
+      "type": "string"
+    },
+    "enqueuedTime": {
+      "description": "The time at which this message was received by IoT Central.",
+      "type": "string"
+    },
+    "enrichments": {
+      "description": "enrichments of the message, expressed as (key, value) pairs, unused",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "description": "key of the enrichment",
+            "type": "string"
+          },
+          "value": {
+            "description": "value of the enrichment",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "messageProperties": {
+      "description": "properties of the message, expressed as (key, value) pairs, unused",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "description": "key of the messageProperty",
+            "type": "string"
+          },
+          "value": {
+            "description": "value of the messageProperty",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "messageSource": {
+      "description": "The source for the message - telemetry",
+      "type": "string"
+    },
+    "schema": {
+      "description": "The name and version of the payload schema.",
+      "type": "string"
+    },
+    "telemetry": {
+      "description": "telemetry data",
+      "type": "object",
+      "required": [
+        "measurement_id"
+      ],
+      "properties": {
+        "lora_node_id": {
+          "description": "unique identifier of the lora_node which performed the measurement. Ex: 0x2_UniPi_Radiation_Monitor",
+          "type": "string"
+        },
+        "timestamp": {
+          "description": "Timestamp of the measurement. hh:mm:ss-dd-mt-yyyy. Ex: 13:50:00-03/03/2023",
+          "type": "string"
+        },
+        "measurement_id": {
+          "description": "unique identifier of the measurement formed by the lora_node_id and the timestamp: Ex: 0x2_UniPi_Radiation_Monitor_13:50:00-03/03/2023",
+          "type": "string"
+        },
+        "channel_1": {
+          "description": "Value returned by channel_1 of the lora_node",
+          "type": "number"
+        },
+        "channel_2": {
+          "description": "Value returned by channel_2 of the lora_node",
+          "type": "number"
+        },
+        "channel_3": {
+          "description": "Value returned by channel_3 of the lora_node",
+          "type": "number"
+        },
+        "channel_4": {
+          "description": "Value returned by channel_4 of the lora_node",
+          "type": "number"
+        },
+        "channel_5": {
+          "description": "Value returned by channel_5 of the lora_node",
+          "type": "number"
+        },
+        "channel_6": {
+          "description": "Value returned by channel_6 of the lora_node",
+          "type": "number"
+        },
+        "channel_7": {
+          "description": "Value returned by channel_7 of the lora_node",
+          "type": "number"
+        },
+        "channel_8": {
+          "description": "Value returned by channel_8 of the lora_node",
+          "type": "number"
+        },
+        "channel_9": {
+          "description": "Value returned by channel_9 of the lora_node",
+          "type": "number"
+        }
+      }
+    }
+  }
+}
