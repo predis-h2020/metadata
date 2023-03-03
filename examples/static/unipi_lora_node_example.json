@@ -1,0 +1,47 @@
+{
+    "comment": "this is an example of metadata for a lora_node that is validated with a schema found in schemas/ folder.",
+	"lora_node_id": "0x02_UniPi_Radiation_Monitor",
+	"manufacturer": "UniPi",
+	"manufacturing_date": "15-10-2021",
+	"pcb_version": "pcb_lora_node_v1",
+	"software_version": "software_lora_node_v1",
+	"location": [0,0,1.2],
+	"channels": [
+		{
+			"channel_id": "channel_1",
+			"detector_id": "0x01_gamma_detector_UniPi",
+			"channel_format": "int32_t",
+			"measuring_interval": 6600,
+			"unused_channel_value_indicator": -1
+		},
+		{
+			"channel_id": "channel_2",
+			"detector_id": "0x02_gamma_detector_UniPi",
+			"channel_format": "int32_t",
+			"measuring_interval": 6600,
+			"unused_channel_value_indicator": -1
+		},
+		{
+			"channel_id": "channel_3",
+			"detector_id": "0x03_neutron_detector_UniPi",
+			"channel_format": "int32_t",
+			"measuring_interval": 6600,
+			"unused_channel_value_indicator": -1			
+		},
+		{
+			"channel_id": "channel_4",
+			"detector_id": "0x04_neutron_detector_UniPi",
+			"channel_format": "int32_t",
+			"measuring_interval": 6600,
+			"unused_channel_value_indicator": -1			
+		},
+		{
+			"channel_id": "channel_5",
+			"detector_id": "0x05_battery_monitor_UniPi",
+			"channel_format": "int32_t",
+			"measuring_interval": 6600,
+			"unused_channel_value_indicator": -1			
+		}			
+	]
+}
+

@@ -1,0 +1,15 @@
+{
+    "comment": "this is an example of metadata for a detector that is validated with a schema found in schemas/ folder.",
+    "detector_id": "0x01_gamma_detector_UniPi",
+	"manufacturer": "UniPi",
+	"manufacturing_date": "15-10-2021",
+	"pcb_version": "gamma_rad_pcb_v1",
+	"calibration": {
+		"date": "15-10-2021",
+		"calibration_factor": "4.8 cpm/uS/v"
+	},
+	"measuring_capability": {
+		"capability": "gamma_radioactivity_cts",
+		"unit": "cts"
+	}
+}
