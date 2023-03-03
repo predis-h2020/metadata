@@ -1,0 +1,25 @@
+{
+  "comment": "this is an example of the measure conducted by a unipi radiation monitor lora_node.",
+  "applicationId": "f8c5a3e1-c87a-47db-9a90-658a45e0275d",
+  "deviceId": "8cb1w0hgla",
+  "enqueuedTime": "2023-02-28T14:50:02.943Z",
+  "enrichments": {},
+  "messageProperties": {},
+  "messageSource": "telemetry",
+  "schema": "default@v1",
+  "telemetry": {
+    "channel_1": 0,
+    "channel_2": 0,
+    "channel_3": 0,
+    "channel_4": 0,
+    "channel_5": 0,
+    "channel_6": 0,
+    "channel_7": 0,
+    "channel_8": 0,
+    "channel_9": 90,
+    "measurement_id": "0x2_UniPi_15:40:00-28/02/2023",
+    "lora_node_id": "0x2_UniPi",
+    "timestamp": "15:40:00-28/02/2023"
+  },
+  "templateId": "dtmi:modelDefinition:nplxoqf9vyo:h23czsy69ks"
+}
