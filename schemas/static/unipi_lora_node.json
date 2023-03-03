@@ -1,0 +1,113 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "lora_node radiation monitor Static Metadata",
+  "description": "Metadata to describe a lora_node which must be installed on a drum. Each node includes 8 channels which can be connected to Up to 8 radiation detectors (gamma and neutron) and 1 channel always connected to a battery monitoring detector.",
+  "type": "object",
+  "required": [
+    "lora_node_id",
+    "channels"
+  ],
+  "properties": {
+    "lora_node_id": {
+      "description": "Unique identifier of the LoRa node: Ex: 0x2_UniPi_Radiation_Monitor",
+      "type": "string"
+    },
+    "manufacturer": {
+      "description": "Institution/company responsible for the product. Ex: UniPi",
+      "type": "string"
+    },
+    "manufacturing_date": {
+      "description": "Manufacturing date of the lora_node: Ex: 15-10-2021",
+      "type": "string"
+    },
+    "pcb_version": {
+      "description": "PCB version of the lora_node: Ex: pcb_lora_node_v1",
+      "type": "string"
+    },
+    "software_version": {
+      "description": "Sofwtare version of the lora_node: Ex: software_lora_node_v1",
+      "type": "string"
+    },
+    "location": {
+      "description": "Position of installation of the lora_node on the drum. Cylindrical coordinate system in the format [radial distance, azimuth, height] and SI measure units. Ex: 0,0,1.2",
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "channels": {
+      "description": "Measuring channels of the lora_node",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "channel_id",
+          "detector_id",
+          "detector_position",
+          "channel_format",
+          "measuring_interval",
+          "unused_channel_value_indicator"
+        ],
+        "properties": {
+          "channel_id": {
+            "description": "id of the measuring channel. Ex: channel_1",
+            "type": "string",
+            "enum": [
+              "channel_1",
+              "channel_2",
+              "channel_3",
+              "channel_4",
+              "channel_5",
+              "channel_6",
+              "channel_7",
+              "channel_8",
+              "channel_9"
+            ]
+          },
+          "detector_id": {
+            "description": "id of the detector connected to the channel. Ex: 0x01_gamma_detector_UniPi, but may be changed to URL to json of a detector",
+            "type": "string"
+          },
+          "position": {
+            "description": "The position of the detector defined by location and optional orientation.",
+            "type": "object",
+            "required": [
+              "location"
+            ],
+            "properties": {
+              "location": {
+                "description": "The XYZ coordinates of the detector.",
+                "type": "array",
+                "items": {
+                  "type": "number"
+                }
+              },
+              "orientation": {
+                "description": "The XYZ coordinates of the orientation of the detector.",
+                "type": "array",
+                "items": {
+                  "type": "number"
+                }
+              }
+            }
+          },
+          "channel_format": {
+            "description": "format of the data returned fromt the channel: Ex: int32_t",
+            "type": "string",
+            "enum": [
+              "int32_t"
+            ]
+          },
+          "measuring_interval": {
+            "description": "measuring interval of the channel expressed in seconds: Ex: 6600 -> 1:50 h",
+            "type": "number"
+          },
+          "unused_channel_value_indicator": {
+            "description": "value returned from the channel which expresses an unused channel: Ex: -1",
+            "type": "number"
+          }
+        }
+      }
+    }
+  }
+}

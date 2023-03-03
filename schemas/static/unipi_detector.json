@@ -1,0 +1,69 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Waste Package Monitoring UniPi Detector Metadata",
+    "description": "Metadata for a waste package monitoring detector",
+    "type": "object",
+    "required": [
+        "detector_id",
+        "measuring_quantity"
+    ],
+    "properties": {
+        "detector_id": {
+            "description": "A unique identifier for the detector. Ex. 0x01_gamma_detector_UniPi",
+            "type": "string"
+        },
+		"pcb_version": {
+			"description": "pcb version where the detector is soldered on: Ex: gamma_rad_pcb_v1",
+			"type": "string"
+		},
+		"calibration": {
+			"description": "Information about the detector's calibration.",
+			"type": "object",
+			"properties": {
+				"date": {
+					"description": "Date of the calibration procedure. Ex: 15-10-2021",
+					"type": "string"
+				},
+				"calibration factor": {
+					"description": "Calibration factor of the detector. Ex: 4.8 cpm/uSv/h.",
+					"type": "string"
+				},
+				"validity_date": {
+					"description": "validity date of the calibration. Ex: 15-10-2031",
+					"type": "string"
+				},
+				"notes": {
+					"description": "Additional notes.",
+					"type": "string"
+				}
+			}
+		},		
+        "measuring_capability": {
+            "description": "The type of measurement that the detector is capable of taking.",
+            "type": "object",
+            "required": [
+                "capability",
+                "unit"
+            ],
+            "properties": {
+                "capability": {
+					"description": "measuring capability of the detector. Ex: gamma radioactivity cts.",
+                    "type": "string",
+                    "enum": [
+                        "gamma_radioactivity_cts",
+						"thermal_neutron_radioactivity_cts",
+                        "battery_level_%"
+                    ]
+                },
+                "unit": {
+                    "description": "unit of the value measured by the detector. Ex: cts",
+                    "type": "string",
+					"enum": [
+                        "cts",
+						"%"
+                    ]
+                }
+            }
+        }
+    }
+}
