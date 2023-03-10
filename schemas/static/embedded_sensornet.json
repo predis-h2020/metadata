@@ -13,7 +13,7 @@
             "type": "string"
         },
         "components": {
-            "description": "Main components of the sensing system.",
+            "description": "Main components of the sensing system",
             "type": "object",
             "required": [
                 "sensornet",
@@ -67,6 +67,35 @@
                         "fw_version": {
                             "description": "Firmware version.",
                             "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "data_format": {
+            "description": "Structure of the measurement data gathered by the system",
+            "type": "object",
+            "properties": {
+                "tag_id": {
+                    "description": "ID of the system embedded in the drum",
+                    "type": "number"
+                },
+                "utc_time": {
+                    "description": "Starting time of the measurement",
+                    "type": "number"
+                },
+                "energy_level": {
+                    "description": "Energy storage voltage at the beginning of the message uplink",
+                    "type": "number"
+                },
+                "data": {
+                    "description": "List of SensorNode's data",
+                    "type": "array",
+                    "items": {
+                        "description": "Data from a SensorNode in format: [SensorNode_ID, Humidity, Temperature, Pressure]",
+                        "type": "array",
+                        "items": {
+                            "type": "number"
                         }
                     }
                 }
