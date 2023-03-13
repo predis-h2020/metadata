@@ -1,0 +1,24 @@
+{
+  "comment": "this is an example of metadata for a neutron radiation detector that is validated with a schema found in schemas/ folder.",
+  "sensor_id": "0x4_unipi_neutron_detector",
+  "pose": {
+    "position": [
+      -0.3,
+      0.0,
+      0.5
+    ]
+  },
+  "product_name": "Domino V5.4",
+  "calibration": {
+    "date": "15/10/2021",
+    "factor": [
+      "71.2 cpm/nv"
+    ]
+  },
+  "measuring_quantity": [
+    {
+      "measurement": "neutron_radioactivity",
+      "unit": "cts"
+    }
+  ]
+}

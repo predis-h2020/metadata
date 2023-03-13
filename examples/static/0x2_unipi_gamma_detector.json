@@ -1,0 +1,24 @@
+{
+  "comment": "this is an example of metadata for a gamma radiation detector that is validated with a schema found in schemas/ folder.",
+  "sensor_id": "0x2_unipi_gamma_detector",
+  "pose": {
+    "position": [
+      0.0,
+      -0.3,
+      0.5
+    ]
+  },
+  "product_name": "teviso BG51",
+  "calibration": {
+    "date": "15/10/2021",
+    "factor": [
+      "4.6 cpm/uSv/h"
+    ]
+  },
+  "measuring_quantity": [
+    {
+      "measurement": "gamma_radioactivity",
+      "unit": "cts"
+    }
+  ]
+}

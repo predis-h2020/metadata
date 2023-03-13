@@ -63,7 +63,10 @@
                             "Displacement",
                             "Radioactivity",
                             "Relative Humidity",
-                            "Pressure"
+                            "Pressure",
+							"gamma_radioactivity",
+							"neutron_radioactivity",
+							"battery_level"
                         ]
                     },
                     "unit": {
@@ -97,6 +100,12 @@
                     "description": "Released certificate/code from the institute/company responsible for the calibration.",
                     "type": "string"
                 },
+				"factor": {
+					"description": "calibration factor(s).",
+					"type": "array",
+					"items": {
+						"type": "string"
+				},
                 "notes": {
                     "description": "Additional notes.",
                     "type": "string"
