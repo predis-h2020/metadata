@@ -31,8 +31,6 @@
                             "certificate": "BAM department 8.1"
                         },
                         "pose": {
-                            "body_frame": "",
-                            "rotation_order": "XYZ",
                             "position": [
                                 0,
                                 0,
@@ -69,8 +67,6 @@
                             "certificate": "BAM department 8.1"
                         },
                         "pose": {
-                            "body_frame": "",
-                            "rotation_order": "XYZ",
                             "position": [
                                 0,
                                 0,
@@ -114,8 +110,6 @@
                             "certificate": "BAM department 8.1"
                         },
                         "pose": {
-                            "body_frame": "",
-                            "rotation_order": "XYZ",
                             "position": [
                                 0,
                                 0,
@@ -152,8 +146,6 @@
                             "certificate": "BAM department 8.1"
                         },
                         "pose": {
-                            "body_frame": "",
-                            "rotation_order": "XYZ",
                             "position": [
                                 0,
                                 0,
@@ -197,8 +189,6 @@
                             "certificate": "BAM department 8.1"
                         },
                         "pose": {
-                            "body_frame": "",
-                            "rotation_order": "XYZ",
                             "position": [
                                 0,
                                 0,
@@ -235,8 +225,6 @@
                             "certificate": "BAM department 8.1"
                         },
                         "pose": {
-                            "body_frame": "",
-                            "rotation_order": "XYZ",
                             "position": [
                                 0,
                                 0,
@@ -280,8 +268,6 @@
                             "certificate": "BAM department 8.1"
                         },
                         "pose": {
-                            "body_frame": "",
-                            "rotation_order": "XYZ",
                             "position": [
                                 0,
                                 0,
@@ -318,8 +304,6 @@
                             "certificate": "BAM department 8.1"
                         },
                         "pose": {
-                            "body_frame": "",
-                            "rotation_order": "XYZ",
                             "position": [
                                 0,
                                 0,
@@ -363,8 +347,6 @@
                             "certificate": "BAM department 8.1"
                         },
                         "pose": {
-                            "body_frame": "",
-                            "rotation_order": "XYZ",
                             "position": [
                                 0,
                                 0,
@@ -401,8 +383,6 @@
                             "certificate": "BAM department 8.1"
                         },
                         "pose": {
-                            "body_frame": "",
-                            "rotation_order": "XYZ",
                             "position": [
                                 0,
                                 0,
