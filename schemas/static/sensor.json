@@ -77,8 +77,8 @@
                         "description": "Maximum value admissible by the sensor (in SI unit measure).",
                         "type": "number"
                     },
-                    "accuracy": {
-                        "description": "Sensor's accuracy (in SI unit measure)",
+                    "variance": {
+                        "description": "Average of the squared differences of the measurements from their mean value.",
                         "type": "number"
                     }
                 }
