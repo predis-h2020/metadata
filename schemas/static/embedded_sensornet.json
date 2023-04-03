@@ -43,7 +43,8 @@
                                 "type": "string"
                             },
                             "sensors": {
-                                "$ref": "sensor.json"
+                                "type": "array",
+                                "items": {"$ref": "sensor.json"}
                             }
                         }
                     }
