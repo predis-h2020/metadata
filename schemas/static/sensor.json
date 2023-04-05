@@ -60,9 +60,9 @@
                         "enum": [
                             "Temperature",
                             "Displacement",
-			    "Gamma Radioactivity",
-			    "Neutron Radioactivity",
-			    "Battery Level",
+                            "Gamma Radioactivity",
+                            "Neutron Radioactivity",
+                            "Battery Level",
                             "Relative Humidity",
                             "Pressure"
                         ]
@@ -98,12 +98,13 @@
                     "description": "Released certificate/code from the institute/company responsible for the calibration.",
                     "type": "string"
                 },
-        	"factor": {
-          	    "description": "calibration factor(s).",
+                "factor": {
+                    "description": "calibration factor(s).",
                     "type": "array",
                     "items": {
-                    	"type": "string"
-          	},
+                        "type": "string"
+                    }
+                },
                 "notes": {
                     "description": "Additional notes.",
                     "type": "string"
