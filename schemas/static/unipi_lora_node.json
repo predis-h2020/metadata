@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Unipi LoRa node metadata schema",
+  "description": "Metadata to describe a LoRa node with up to 8 radiation sensors attached to its readout channels and 1 battery monitor.",
+  "type": "object",
+  "required": [
+    "lora_node_id",
+    "channels"
+  ],
+  "properties": {
+    "drum_id": {
+      "description": "drum's unique identifier specified by the facility. Ex: 0xA5_drum",
+      "type": "string"
+    },
+    "lora_node_id": {
+      "description": "lora node unique identifier. Ex: 0x2_unipi",
+      "type": "string"
+    },
+    "manufacturer": {
+      "description": "Institution/company responsible for the product. Ex: unipi",
+      "type": "string"
+    },
+    "hw_version": {
+      "description": "PCB version. Ex: pcb_lora_node_unipi_v2",
+      "type": "string"
+    },
+    "fw_version": {
+      "description": "Firmware version. Ex: sw_lora_node_unipi_v3",
+      "type": "string"
+    },
+    "channels": {
+      "description": "readout channels associated to sensors",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "channel_id": {
+            "description": "channel of the LoRa node which can be connected to radiation sensors or a battery monitor",
+            "type": "string"
+          },
+          "measurement_interval": {
+            "description": "measurement interval of a sensor in seconds",
+            "type": "number"
+          },
+          "sensor": {
+            "$ref": "sensor.json"
+          }
+        }
+      }
+    }
+  }
+}
