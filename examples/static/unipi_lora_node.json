@@ -1,5 +1,4 @@
 {
-  "comment": "this is an example of metadata for a lora node that is validated with a schema found in schemas/ folder.",
   "drum_id": "0xFA5_drum",
   "lora_node_id": "0x2_unipi",
   "manufacturer": "unipi",
@@ -9,8 +8,7 @@
     {
       "channel_id": "channel_1",
       "measurement_interval": 3600,
-      "sensor": {
-        "comment": "this is an example of metadata for a gamma radiation detector that is validated with a schema found in schemas/ folder.",
+      "sensors": {
         "sensor_id": "0x1_unipi_gamma_detector",
         "pose": {
           "position": [
@@ -21,10 +19,13 @@
         },
         "product_name": "teviso BG51",
         "calibration": {
-          "date": "15/10/2021",
-          "factor": [
-            "4.8 cpm/uSv/h"
-          ]
+          "date": "2021/10/15 00:00:00",
+          "factor": {
+            "value": [
+              4.8
+            ],
+            "unit": "cpm/uSv/h"
+          }
         },
         "measuring_quantity": [
           {
@@ -37,8 +38,7 @@
     {
       "channel_id": "channel_2",
       "measurement_interval": 3600,
-      "sensor": {
-        "comment": "this is an example of metadata for a gamma radiation detector that is validated with a schema found in schemas/ folder.",
+      "sensors": {
         "sensor_id": "0x2_unipi_gamma_detector",
         "pose": {
           "position": [
@@ -49,10 +49,13 @@
         },
         "product_name": "teviso BG51",
         "calibration": {
-          "date": "15/10/2021",
-          "factor": [
-            "4.6 cpm/uSv/h"
-          ]
+          "date": "2021/10/15 00:00:00",
+          "factor": {
+            "value": [
+              4.8
+            ],
+            "unit": "cpm/uSv/h"
+          }
         },
         "measuring_quantity": [
           {
@@ -65,8 +68,7 @@
     {
       "channel_id": "channel_3",
       "measurement_interval": 3600,
-      "sensor": {
-        "comment": "this is an example of metadata for a neutron radiation detector that is validated with a schema found in schemas/ folder.",
+      "sensors": {
         "sensor_id": "0x3_unipi_neutron_detector",
         "pose": {
           "position": [
@@ -77,10 +79,13 @@
         },
         "product_name": "Domino V5.4",
         "calibration": {
-          "date": "15/10/2021",
-          "factor": [
-            "72.8 cpm/nv"
-          ]
+          "date": "2021/10/15 00:00:00",
+          "factor": {
+            "value": [
+              4.8
+            ],
+            "unit": "cpm/uSv/h"
+          }
         },
         "measuring_quantity": [
           {
@@ -93,8 +98,7 @@
     {
       "channel_id": "channel_4",
       "measurement_interval": 3600,
-      "sensor": {
-        "comment": "this is an example of metadata for a neutron radiation detector that is validated with a schema found in schemas/ folder.",
+      "sensors": {
         "sensor_id": "0x4_unipi_neutron_detector",
         "pose": {
           "position": [
@@ -105,10 +109,13 @@
         },
         "product_name": "Domino V5.4",
         "calibration": {
-          "date": "15/10/2021",
-          "factor": [
-            "71.2 cpm/nv"
-          ]
+          "date": "2021/10/15 00:00:00",
+          "factor": {
+            "value": [
+              4.8
+            ],
+            "unit": "cpm/uSv/h"
+          }
         },
         "measuring_quantity": [
           {
@@ -120,8 +127,7 @@
     },
     {
       "channel_id": "channel_9",
-      "sensor": {
-        "comment": "this is an example of metadata for a battery monitor detector that is validated with a schema found in schemas/ folder.",
+      "sensors": {
         "sensor_id": "0x5_unipi_battery_monitor",
         "pose": {
           "position": [

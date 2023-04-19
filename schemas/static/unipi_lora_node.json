@@ -4,6 +4,7 @@
   "description": "Metadata to describe a LoRa node with up to 8 radiation sensors attached to its readout channels and 1 battery monitor.",
   "type": "object",
   "required": [
+    "drum_id",
     "lora_node_id",
     "channels"
   ],
@@ -28,6 +29,11 @@
       "description": "Firmware version. Ex: sw_lora_node_unipi_v3",
       "type": "string"
     },
+    "installation_time": {
+      "description": "Timestamp for system installation or changes.",
+      "type": "string",
+      "format": "YYYY/MM/DD hh:mm:ss"
+    },
     "channels": {
       "description": "readout channels associated to sensors",
       "type": "array",
@@ -42,7 +48,7 @@
             "description": "measurement interval of a sensor in seconds",
             "type": "number"
           },
-          "sensor": {
+          "sensors": {
             "$ref": "sensor.json"
           }
         }
