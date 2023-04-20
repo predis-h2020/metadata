@@ -1,0 +1,149 @@
+{
+  "drum_id": "0xFA5_drum",
+  "lora_node_id": "0x2_unipi",
+  "manufacturer": "unipi",
+  "hw_version": "pcb_lora_node_unipi_v3",
+  "sw_version": "sw_lora_node_unipi_v2",
+  "channels": [
+    {
+      "channel_id": "channel_1",
+      "measurement_interval": 3600,
+      "sensors": {
+        "sensor_id": "0x1_unipi_gamma_detector",
+        "pose": {
+          "position": [
+            0.0,
+            0.3,
+            0.5
+          ]
+        },
+        "product_name": "teviso BG51",
+        "calibration": {
+          "date": "2021/10/15 00:00:00",
+          "factor": {
+            "value": [
+              4.8
+            ],
+            "unit": "cpm/uSv/h"
+          }
+        },
+        "measuring_quantity": [
+          {
+            "measurement": "Gamma Radioactivity",
+            "unit": "cts"
+          }
+        ]
+      }
+    },
+    {
+      "channel_id": "channel_2",
+      "measurement_interval": 3600,
+      "sensors": {
+        "sensor_id": "0x2_unipi_gamma_detector",
+        "pose": {
+          "position": [
+            0.0,
+            -0.3,
+            0.5
+          ]
+        },
+        "product_name": "teviso BG51",
+        "calibration": {
+          "date": "2021/10/15 00:00:00",
+          "factor": {
+            "value": [
+              4.8
+            ],
+            "unit": "cpm/uSv/h"
+          }
+        },
+        "measuring_quantity": [
+          {
+            "measurement": "Gamma Radioactivity",
+            "unit": "cts"
+          }
+        ]
+      }
+    },
+    {
+      "channel_id": "channel_3",
+      "measurement_interval": 3600,
+      "sensors": {
+        "sensor_id": "0x3_unipi_neutron_detector",
+        "pose": {
+          "position": [
+            0.3,
+            0.0,
+            0.5
+          ]
+        },
+        "product_name": "Domino V5.4",
+        "calibration": {
+          "date": "2021/10/15 00:00:00",
+          "factor": {
+            "value": [
+              4.8
+            ],
+            "unit": "cpm/uSv/h"
+          }
+        },
+        "measuring_quantity": [
+          {
+            "measurement": "Neutron Radioactivity",
+            "unit": "cts"
+          }
+        ]
+      }
+    },
+    {
+      "channel_id": "channel_4",
+      "measurement_interval": 3600,
+      "sensors": {
+        "sensor_id": "0x4_unipi_neutron_detector",
+        "pose": {
+          "position": [
+            -0.3,
+            0.0,
+            0.5
+          ]
+        },
+        "product_name": "Domino V5.4",
+        "calibration": {
+          "date": "2021/10/15 00:00:00",
+          "factor": {
+            "value": [
+              4.8
+            ],
+            "unit": "cpm/uSv/h"
+          }
+        },
+        "measuring_quantity": [
+          {
+            "measurement": "Neutron Radioactivity",
+            "unit": "cts"
+          }
+        ]
+      }
+    },
+    {
+      "channel_id": "channel_9",
+      "sensors": {
+        "sensor_id": "0x5_unipi_battery_monitor",
+        "pose": {
+          "position": [
+            0.0,
+            0.0,
+            1.2
+          ]
+        },
+        "product_name": "Atmega32u4",
+        "measuring_quantity": [
+          {
+            "measurement": "Battery Level",
+            "unit": "%"
+          }
+        ]
+      }
+    }
+  ]
+}
