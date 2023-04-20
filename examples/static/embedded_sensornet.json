@@ -6,240 +6,375 @@
                 "node_id": "0x00",
                 "hw_version": "2.2.1",
                 "manufacturer": "BAM",
-                "devices": [
+                "sensors": [
                     {
-                        "measurement": "Relative Humidity",
+                        "sensor_id": "0x27",
                         "product_name": "HIH8130-021-001",
-                        "measure_unit": "%RH",
-                        "min": 0,
-                        "max": 100,
-                        "accuracy": 2
+                        "measuring_quantity": [
+                            {
+                                "measurement": "Relative Humidity",
+                                "unit": "%RH",
+                                "min": 0,
+                                "max": 100
+                            },
+                            {
+                                "measurement": "Temperature",
+                                "unit": "°C",
+                                "min": -40,
+                                "max": 125
+                            }
+                        ],
+                        "calibration": {
+                            "date": "24.01.2023",
+                            "certificate": "BAM department 8.1"
+                        },
+                        "pose": {
+                            "position": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "orientation": [
+                                0,
+                                0,
+                                0
+                            ]
+                        }
                     },
                     {
-                        "measurement": "Temperature",
-                        "product_name": "HIH8130-021-001",
-                        "measure_unit": "°C",
-                        "min": -40,
-                        "max": 125,
-                        "accuracy": 0.5
-                    },
-                    {
-                        "measurement": "Pressure",
+                        "sensor_id": "0x28",
                         "product_name": "ABP2LNNT400KA2A3XX",
-                        "measure_unit": "kPa",
-                        "min": 0,
-                        "max": 400,
-                        "accuracy": 1
-                    },
-                    {
-                        "measurement": "Temperature",
-                        "product_name": "ABP2LNNT400KA2A3XX",
-                        "measure_unit": "°C",
-                        "min": -50,
-                        "max": 150,
-                        "accuracy": 5
+                        "measuring_quantity": [
+                            {
+                                "measurement": "Pressure",
+                                "unit": "kPa",
+                                "min": 0,
+                                "max": 400
+                            },
+                            {
+                                "measurement": "Temperature",
+                                "unit": "°C",
+                                "min": -50,
+                                "max": 150
+                            }
+                        ],
+                        "calibration": {
+                            "date": "24.01.2023",
+                            "certificate": "BAM department 8.1"
+                        },
+                        "pose": {
+                            "position": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "orientation": [
+                                0,
+                                0,
+                                0
+                            ]
+                        }
                     }
-                ],
-                "calibration": {
-                    "date": "24.01.2023",
-                    "certificate": "BAM department 8.1"
-                },
-                "location": [
-                    0.297,
-                    0,
-                    0.80
                 ]
             },
             {
                 "node_id": "0x01",
                 "hw_version": "2.2.1",
                 "manufacturer": "BAM",
-                "devices": [
+                "sensors": [
                     {
-                        "measurement": "Relative Humidity",
+                        "sensor_id": "0x26",
                         "product_name": "HIH8130-021-001",
-                        "measure_unit": "%RH",
-                        "min": 0,
-                        "max": 100,
-                        "accuracy": 2
+                        "measuring_quantity": [
+                            {
+                                "measurement": "Relative Humidity",
+                                "unit": "%RH",
+                                "min": 0,
+                                "max": 100
+                            },
+                            {
+                                "measurement": "Temperature",
+                                "unit": "°C",
+                                "min": -40,
+                                "max": 125
+                            }
+                        ],
+                        "calibration": {
+                            "date": "24.01.2023",
+                            "certificate": "BAM department 8.1"
+                        },
+                        "pose": {
+                            "position": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "orientation": [
+                                0,
+                                0,
+                                0
+                            ]
+                        }
                     },
                     {
-                        "measurement": "Temperature",
-                        "product_name": "HIH8130-021-001",
-                        "measure_unit": "°C",
-                        "min": -40,
-                        "max": 125,
-                        "accuracy": 0.5
-                    },
-                    {
-                        "measurement": "Pressure",
+                        "sensor_id": "0x29",
                         "product_name": "ABP2LNNT400KA2A3XX",
-                        "measure_unit": "kPa",
-                        "min": 0,
-                        "max": 400,
-                        "accuracy": 1
-                    },
-                    {
-                        "measurement": "Temperature",
-                        "product_name": "ABP2LNNT400KA2A3XX",
-                        "measure_unit": "°C",
-                        "min": -50,
-                        "max": 150,
-                        "accuracy": 5
+                        "measuring_quantity": [
+                            {
+                                "measurement": "Pressure",
+                                "unit": "kPa",
+                                "min": 0,
+                                "max": 400
+                            },
+                            {
+                                "measurement": "Temperature",
+                                "unit": "°C",
+                                "min": -50,
+                                "max": 150
+                            }
+                        ],
+                        "calibration": {
+                            "date": "24.01.2023",
+                            "certificate": "BAM department 8.1"
+                        },
+                        "pose": {
+                            "position": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "orientation": [
+                                0,
+                                0,
+                                0
+                            ]
+                        }
                     }
-                ],
-                "calibration": {
-                    "date": "24.01.2023",
-                    "certificate": "BAM department 8.1"
-                },
-                "location": [
-                    0.297,
-                    0,
-                    0.4
                 ]
             },
             {
                 "node_id": "0x02",
                 "hw_version": "2.2.1",
                 "manufacturer": "BAM",
-                "devices": [
+                "sensors": [
                     {
-                        "measurement": "Relative Humidity",
+                        "sensor_id": "0x25",
                         "product_name": "HIH8130-021-001",
-                        "measure_unit": "%RH",
-                        "min": 0,
-                        "max": 100,
-                        "accuracy": 2
+                        "measuring_quantity": [
+                            {
+                                "measurement": "Relative Humidity",
+                                "unit": "%RH",
+                                "min": 0,
+                                "max": 100
+                            },
+                            {
+                                "measurement": "Temperature",
+                                "unit": "°C",
+                                "min": -40,
+                                "max": 125
+                            }
+                        ],
+                        "calibration": {
+                            "date": "24.01.2023",
+                            "certificate": "BAM department 8.1"
+                        },
+                        "pose": {
+                            "position": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "orientation": [
+                                0,
+                                0,
+                                0
+                            ]
+                        }
                     },
                     {
-                        "measurement": "Temperature",
-                        "product_name": "HIH8130-021-001",
-                        "measure_unit": "°C",
-                        "min": -40,
-                        "max": 125,
-                        "accuracy": 0.5
-                    },
-                    {
-                        "measurement": "Pressure",
+                        "sensor_id": "0x2A",
                         "product_name": "ABP2LNNT400KA2A3XX",
-                        "measure_unit": "kPa",
-                        "min": 0,
-                        "max": 400,
-                        "accuracy": 1
-                    },
-                    {
-                        "measurement": "Temperature",
-                        "product_name": "ABP2LNNT400KA2A3XX",
-                        "measure_unit": "°C",
-                        "min": -50,
-                        "max": 150,
-                        "accuracy": 5
+                        "measuring_quantity": [
+                            {
+                                "measurement": "Pressure",
+                                "unit": "kPa",
+                                "min": 0,
+                                "max": 400
+                            },
+                            {
+                                "measurement": "Temperature",
+                                "unit": "°C",
+                                "min": -50,
+                                "max": 150
+                            }
+                        ],
+                        "calibration": {
+                            "date": "24.01.2023",
+                            "certificate": "BAM department 8.1"
+                        },
+                        "pose": {
+                            "position": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "orientation": [
+                                0,
+                                0,
+                                0
+                            ]
+                        }
                     }
-                ],
-                "calibration": {
-                    "date": "24.01.2023",
-                    "certificate": "BAM department 8.1"
-                },
-                "location": [
-                    0.297,
-                    2.09,
-                    0.4
                 ]
             },
             {
                 "node_id": "0x03",
                 "hw_version": "2.2.1",
                 "manufacturer": "BAM",
-                "devices": [
+                "sensors": [
                     {
-                        "measurement": "Relative Humidity",
+                        "sensor_id": "0x24",
                         "product_name": "HIH8130-021-001",
-                        "measure_unit": "%RH",
-                        "min": 0,
-                        "max": 100,
-                        "accuracy": 2
+                        "measuring_quantity": [
+                            {
+                                "measurement": "Relative Humidity",
+                                "unit": "%RH",
+                                "min": 0,
+                                "max": 100
+                            },
+                            {
+                                "measurement": "Temperature",
+                                "unit": "°C",
+                                "min": -40,
+                                "max": 125
+                            }
+                        ],
+                        "calibration": {
+                            "date": "24.01.2023",
+                            "certificate": "BAM department 8.1"
+                        },
+                        "pose": {
+                            "position": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "orientation": [
+                                0,
+                                0,
+                                0
+                            ]
+                        }
                     },
                     {
-                        "measurement": "Temperature",
-                        "product_name": "HIH8130-021-001",
-                        "measure_unit": "°C",
-                        "min": -40,
-                        "max": 125,
-                        "accuracy": 0.5
-                    },
-                    {
-                        "measurement": "Pressure",
+                        "sensor_id": "0x2B",
                         "product_name": "ABP2LNNT400KA2A3XX",
-                        "measure_unit": "kPa",
-                        "min": 0,
-                        "max": 400,
-                        "accuracy": 1
-                    },
-                    {
-                        "measurement": "Temperature",
-                        "product_name": "ABP2LNNT400KA2A3XX",
-                        "measure_unit": "°C",
-                        "min": -50,
-                        "max": 150,
-                        "accuracy": 5
+                        "measuring_quantity": [
+                            {
+                                "measurement": "Pressure",
+                                "unit": "kPa",
+                                "min": 0,
+                                "max": 400
+                            },
+                            {
+                                "measurement": "Temperature",
+                                "unit": "°C",
+                                "min": -50,
+                                "max": 150
+                            }
+                        ],
+                        "calibration": {
+                            "date": "24.01.2023",
+                            "certificate": "BAM department 8.1"
+                        },
+                        "pose": {
+                            "position": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "orientation": [
+                                0,
+                                0,
+                                0
+                            ]
+                        }
                     }
-                ],
-                "calibration": {
-                    "date": "24.01.2023",
-                    "certificate": "BAM department 8.1"
-                },
-                "location": [
-                    0.297,
-                    4.71,
-                    0.4
                 ]
             },
             {
                 "node_id": "0x04",
                 "hw_version": "2.2.1",
                 "manufacturer": "BAM",
-                "devices": [
+                "sensors": [
                     {
-                        "measurement": "Relative Humidity",
+                        "sensor_id": "0x23",
                         "product_name": "HIH8130-021-001",
-                        "measure_unit": "%RH",
-                        "min": 0,
-                        "max": 100,
-                        "accuracy": 2
+                        "measuring_quantity": [
+                            {
+                                "measurement": "Relative Humidity",
+                                "unit": "%RH",
+                                "min": 0,
+                                "max": 100
+                            },
+                            {
+                                "measurement": "Temperature",
+                                "unit": "°C",
+                                "min": -40,
+                                "max": 125
+                            }
+                        ],
+                        "calibration": {
+                            "date": "24.01.2023",
+                            "certificate": "BAM department 8.1"
+                        },
+                        "pose": {
+                            "position": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "orientation": [
+                                0,
+                                0,
+                                0
+                            ]
+                        }
                     },
                     {
-                        "measurement": "Temperature",
-                        "product_name": "HIH8130-021-001",
-                        "measure_unit": "°C",
-                        "min": -40,
-                        "max": 125,
-                        "accuracy": 0.5
-                    },
-                    {
-                        "measurement": "Pressure",
+                        "sensor_id": "0x2C",
                         "product_name": "ABP2LNNT400KA2A3XX",
-                        "measure_unit": "kPa",
-                        "min": 0,
-                        "max": 400,
-                        "accuracy": 1
-                    },
-                    {
-                        "measurement": "Temperature",
-                        "product_name": "ABP2LNNT400KA2A3XX",
-                        "measure_unit": "°C",
-                        "min": -50,
-                        "max": 150,
-                        "accuracy": 5
+                        "measuring_quantity": [
+                            {
+                                "measurement": "Pressure",
+                                "unit": "kPa",
+                                "min": 0,
+                                "max": 400
+                            },
+                            {
+                                "measurement": "Temperature",
+                                "unit": "°C",
+                                "min": -50,
+                                "max": 150
+                            }
+                        ],
+                        "calibration": {
+                            "date": "24.01.2023",
+                            "certificate": "BAM department 8.1"
+                        },
+                        "pose": {
+                            "position": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "orientation": [
+                                0,
+                                0,
+                                0
+                            ]
+                        }
                     }
-                ],
-                "calibration": {
-                    "date": "24.01.2023",
-                    "certificate": "BAM department 8.1"
-                },
-                "location": [
-                    0.297,
-                    0,
-                    0
                 ]
             }
         ],
