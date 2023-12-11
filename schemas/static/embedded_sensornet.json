@@ -15,7 +15,14 @@
         "installation_time": {
             "description": "Timestamp for system installation or changes.",
             "type": "string",
-            "format": "YYYY/MM/DD hh:mm:ss"
+            "format": "YYYY.MM.DD"
+        },
+        "reference_frame": {
+            "description": "<link/to/picture>",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
         },
         "components": {
             "description": "Main components of the sensing system",
@@ -27,43 +34,8 @@
             "properties": {
                 "sensornet": {
                     "description": "List of SensorNodes embedded in the drum.",
-                    "type": "array",
-                    "items": {
-                        "type": "object",
-                        "required": [
-                            "node_id",
-                            "sensors"
-                        ],
-                        "properties": {
-                            "node_id": {
-                                "description": "SensorNode's ID",
-                                "type": "string"
-                            },
-                            "hw_version": {
-                                "description": "PCB version.",
-                                "type": "string"
-                            },
-                            "manufacturer": {
-                                "description": "Institution/company responsible for the product.",
-                                "type": "string"
-                            },
-                            "sensors": {
-                                "type": "array",
-                                "items": {
-                                    "$ref": "sensor.json"
-                                }
-                            }
-                        }
-                    }
-                },
-                "embedded_tag": {
-                    "description": "Embedded system to collect data from the SensorNodes and to transmit them wireless through the drum shell.",
                     "type": "object",
                     "properties": {
-                        "tag_id": {
-                            "description": "Embedded device unique identifier.",
-                            "type": "string"
-                        },
                         "manufacturer": {
                             "description": "Institution/company responsible for the product.",
                             "type": "string"
@@ -74,6 +46,34 @@
                         },
                         "fw_version": {
                             "description": "Firmware version.",
+                            "type": "string"
+                        },
+                        "nodes": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "sensor.json"
+                            }
+                        }
+                    }
+                },
+                "embedded_tag": {
+                    "description": "Embedded system to collect data from the SensorNodes and to transmit them wireless through the drum shell.",
+                    "type": "object",
+                    "properties": {
+                        "manufacturer": {
+                            "description": "Institution/company responsible for the product.",
+                            "type": "string"
+                        },
+                        "hw_version": {
+                            "description": "PCB version.",
+                            "type": "string"
+                        },
+                        "fw_version": {
+                            "description": "Firmware version.",
+                            "type": "string"
+                        },
+                        "tag_id": {
+                            "description": "Embedded device unique identifier.",
                             "type": "string"
                         }
                     }
