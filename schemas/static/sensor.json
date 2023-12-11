@@ -26,14 +26,14 @@
                     }
                 },
                 "position": {
-                    "description": "Origin of the body frame with respect to the fixed reference frame ([x,y,z] displacements expressed in meters).",
+                    "description": "Origin of the body frame with respect to the fixed reference frame in cylindrical coordinates ([radius, angle, height], units [m,deg,m]).",
                     "type": "array",
                     "items": {
                         "type": "number"
                     }
                 },
                 "orientation": {
-                    "description": "Euler angles of the body frame with respect to the fixed reference frame, applied in the order 'XYZ' before the translation.",
+                    "description": "Euler angles of the body frame with respect to the fixed reference frame, applied in the order 'XYZ' before the translation, units [deg].",
                     "type": "array",
                     "items": {
                         "type": "number"
