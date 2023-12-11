@@ -4,7 +4,9 @@
     "description": "Metadata for a waste package monitoring sensor, including its unique identifier, position, and measurement capabilities.",
     "type": "object",
     "required": [
-        "measuring_quantity"
+        "sensor_id",
+        "measuring_quantity",
+        "pose"
     ],
     "properties": {
         "sensor_id": {
@@ -100,9 +102,19 @@
                 },
                 "factor": {
                     "description": "calibration factor(s).",
-                    "type": "array",
-                    "items": {
-                        "type": "string"
+                    "type": "object",
+                    "properties": {
+                        "value": {
+                            "description": "Values of the calibration factor.",
+                            "type": "array",
+                            "items": {
+                                "type": "number"
+                            }
+                        },
+                        "unit": {
+                            "description": "SI measure unit.",
+                            "type": "string"
+                        }
                     }
                 },
                 "notes": {

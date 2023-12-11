@@ -1,5 +1,4 @@
 {
-    "comment": "this is an example of metadata for a sensor that is validated with a schema found in schemas/ folder. More fields can be added and example can be extended to cover the sensors used in predis.",
     "sensor_id": "sensor-001",
     "pose": {
         "position": [
